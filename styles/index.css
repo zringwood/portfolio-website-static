@@ -1,0 +1,108 @@
+:root{
+    --background: #4169e1;
+    --foreground:#FFFDD0;
+    --text: rgb(23, 21, 21);
+    --divider: silver; 
+
+    --mobile-indent: 1rem;
+}
+.navlist{
+    list-style-type: none;
+    display:flex;
+    align-items: baseline;
+    margin:0;
+    padding: 0 var(--mobile-indent);
+    background-color: var(--foreground);
+    .navlist__link{
+        margin-right: 1rem;
+        padding: var(--mobile-indent) 0 ;
+        
+    }
+    .navlist__link--active{
+        padding: var(--mobile-indent);
+        margin-right: 1rem;
+        background-color: var(--background);
+    }
+}
+ul{
+    list-style-type: none;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    color:var(--text); 
+ }
+.social{
+    display:flex;
+    justify-content: space-evenly;
+   
+}
+.social__element{
+    padding:none;
+}
+body{
+    background-color: var(--background);
+    margin: 0;
+}
+.body__profileContent{
+    color:white;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+}
+.skill-section{
+    padding:var(--mobile-indent);
+}
+.body__section--foreground{
+    padding: var(--mobile-indent);
+    background-color: var(--foreground);
+
+}
+@media only screen and (min-width: 1024px){
+.skills{
+        display: flex;
+
+    }
+}
+@media only screen and (min-width: 1024px){
+.skillcard{
+        display:flex;
+        flex-direction: column;
+        border:1px solid var(--divider);
+        border-radius: 12px;
+        padding: var(--mobile-indent);
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+
+    }
+    .skillcard__skill{
+            font-size: 2rem;
+    }
+}
+.projectCard:hover{
+    transition: 0.5s;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+.projectCard{
+    display:flex;
+    flex-direction: column;
+    border:1px solid var(--divider);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    .projectCard__content{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .projectCard__title{
+        margin:0;
+    }
+    .projectCard__icon{
+        height:80px;
+    }
+}
+.headshot{
+    width:100%;
+}
