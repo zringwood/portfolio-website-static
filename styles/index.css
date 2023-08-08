@@ -50,6 +50,7 @@ body{
 .profile{
     display: flex;
     flex-direction: column;
+    padding:var(--mobile-indent)
 }
 .skill-section{
     padding:var(--mobile-indent);
