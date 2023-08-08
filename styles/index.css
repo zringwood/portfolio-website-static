@@ -40,7 +40,8 @@
         border-radius: 12px;
         padding: var(--mobile-indent);
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
-        width:50%;
+        width:70%;
+        margin: 1rem 0;
         .skillcard__list{
             width:100%;
         }
@@ -49,7 +50,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             position:relative;
-            .skillcard__title{
+            .skillcard__label{
                 width:100%;
             }
             .skillcard__checkbox{
