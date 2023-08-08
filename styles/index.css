@@ -24,26 +24,60 @@
     background-color: var(--foreground);
 
 }
-@media only screen and (min-width: 1024px){
+
 .skills{
         display: flex;
-
+        flex-direction: column;
+        align-items: center;
     }
-}
-@media only screen and (min-width: 1024px){
+
+
 .skillcard{
         display:flex;
         flex-direction: column;
+        align-items: center;
         border:1px solid var(--divider);
         border-radius: 12px;
         padding: var(--mobile-indent);
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
-
+        width:50%;
+        .skillcard__list{
+            width:100%;
+        }
+        .skillcard__skill{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            position:relative;
+            .skillcard__title{
+                width:100%;
+            }
+            .skillcard__checkbox{
+                display:none;
+            }
+            .skillcard__dropdown{
+                display:none;
+            }
+            .skillcard__chevron{
+                position:absolute;
+                right:6px;
+                top:3px;
+                transform: rotate(270deg);
+                width:12px;
+            }
+            .skillcard__checkbox:checked~.skillcard__dropdown{
+                display:block;
+                width:100%;
+                margin: 0.5rem 0;
+              }
+              .skillcard__checkbox:checked~.skillcard__chevron{
+                transition: 0.5s;
+                transform: rotate(360deg);
+              }
+        }
+        
     }
-    .skillcard__skill{
-            font-size: 2rem;
-    }
-}
+    
 .projectCard:hover{
     transition: 0.5s;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);

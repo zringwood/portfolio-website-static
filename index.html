@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zachary Ringwood</title>
-    <link rel="stylesheet" href = "/styles/global.css" type="text/css"></link>
-    <link rel="stylesheet" href = "/styles/index.css" type="text/css"></link>
+    <link rel="stylesheet" href="/styles/global.css" type="text/css">
+    </link>
+    <link rel="stylesheet" href="/styles/index.css" type="text/css">
+    </link>
 
 </head>
 
@@ -25,21 +27,21 @@
             problem-solving. With a strong background in the humanities complimenting my dedication to software
             development I’m sure I can be a valuable addition to any team.
         </p>
-        <ul class = "social">
-        <li class = "social__element"><a href="https://linkedin.com/in/zachary-ringwood">Linkedin</a></li>
-        <li class = "social__element"><a href="https://github.com/zringwood">Github</a></li>
+        <ul class="social">
+            <li class="social__element"><a href="https://linkedin.com/in/zachary-ringwood">Linkedin</a></li>
+            <li class="social__element"><a href="https://github.com/zringwood">Github</a></li>
         </ul>
     </article>
     <article class="body__section body__section--foreground body__section--projects">
         <h2>Projects</h2>
-        <div class="projectCard">
+        <a class="projectCard" href="/pages/tactics.html">
             <h3 class="projectCard__title">Tactics DB</h3>
             <div class="projectCard__content">
                 <img class="projectCard__icon" src="assets/tacticsDB-icon.svg" alt=""></img>
                 <p class="projectCard__description">A huge database of pick-up-and-play chess puzzles for your
                     commute!</p>
             </div>
-        </div>
+        </a>
     </article>
     <article class="skill-section">
         <h2>Skills</h2>
@@ -47,7 +49,16 @@
             <article class="skillcard">
                 <h3 class="skillcard__title">Webdev</h3>
                 <ul class="skillcard__list">
-                    <li class="skillcard__skill">React</li>
+                    <li class="skillcard__skill">
+                        
+                            <label class="skillcard__title" for="react-dropdown">React</label>
+                            <input id="react-dropdown" class="skillcard__checkbox" type="checkbox"></input>
+                            <img class="skillcard__chevron" src = "assets/down-chevron.svg" alt=""/>
+                            <div class="skillcard__dropdown">React is my best framework and the one I learned at
+                                Brainstation. All of my portfolio projects were created using React, with the exception of
+                                this website.</div>
+                       
+                    </li>
                     <li class="skillcard__skill">Javascript</li>
                     <li class="skillcard__skill">MySQL</li>
                     <li class="skillcard__skill">NoSQL</li>

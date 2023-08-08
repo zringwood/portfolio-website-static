@@ -18,6 +18,7 @@ a{
  body{
     background-color: var(--background);
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
  /* Header */
 .navlist{
