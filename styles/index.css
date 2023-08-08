@@ -1,4 +1,13 @@
+:root{
+    --background: #4169e1;
+    --foreground:#FFFDD0;
+    --text: rgb(23, 21, 21);
+    --divider: silver; 
 
+    --mobile-indent: 1rem;
+    --tablet-indent: 2.5rem;
+
+}
 
 .social{
     display:flex;
@@ -14,21 +23,29 @@
 .profile{
     display: flex;
     flex-direction: column;
-    padding:var(--mobile-indent)
+    padding:var(--mobile-indent);
+}
+
+.headshot{
+    width:100%;
 }
 .skill-section{
     padding:var(--mobile-indent);
 }
-.body__section--foreground{
+.projects{
     padding: var(--mobile-indent);
     background-color: var(--foreground);
 
 }
-
+.education{
+    padding: var(--mobile-indent);
+    background-color: var(--foreground);
+}
 .skills{
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+       justify-content: center;
     }
 
 
@@ -40,8 +57,9 @@
         border-radius: 12px;
         padding: var(--mobile-indent);
         box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
-        width:70%;
-        margin: 1rem 0;
+        width:12.5rem;
+        margin: 1rem ;
+        
         .skillcard__list{
             width:100%;
         }
@@ -88,7 +106,7 @@
     flex-direction: column;
     border:1px solid var(--divider);
     border-radius: 12px;
-    padding: 2rem;
+    padding: 1rem;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
     .projectCard__content{
         display:flex;
@@ -101,8 +119,22 @@
     }
     .projectCard__icon{
         height:80px;
+        margin-right: 0.25rem;
     }
 }
-.headshot{
-    width:100%;
+@media (min-width: 768px) {
+    .profile__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .headshot{
+        width:50%;
+        margin-right: 1rem;
+    }
+    .projectCard{
+        margin: var(--tablet-indent);
+    }
+    
 }

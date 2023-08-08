@@ -5,8 +5,14 @@
     --divider: silver; 
 
     --mobile-indent: 1rem;
+
+    --tablet-breakpoint: 768px;
+    --desktop-breakpoint: 1024px;
 }
 /* Universal Element Values */
+*{
+    box-sizing: border-box;
+}
 ul{
     list-style-type: none;
     padding:0;
