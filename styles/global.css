@@ -1,0 +1,37 @@
+:root{
+    --background: #4169e1;
+    --foreground:#FFFDD0;
+    --text: rgb(23, 21, 21);
+    --divider: silver; 
+
+    --mobile-indent: 1rem;
+}
+/* Universal Element Values */
+ul{
+    list-style-type: none;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    color:var(--text); 
+ }
+ body{
+    background-color: var(--background);
+    margin: 0;
+}
+ /* Header */
+.navlist{
+    list-style-type: none;
+    display:flex;
+    align-items: baseline;
+    margin:0;
+    padding: 0 var(--mobile-indent);
+    background-color: var(--foreground);
+    .navlist__link{
+        margin-right: 1rem;
+        padding: var(--mobile-indent) 0.5rem ;
+    }
+    .navlist__link--active{
+        background-color: var(--background);
+    }
+}

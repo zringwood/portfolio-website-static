@@ -1,37 +1,5 @@
-:root{
-    --background: #4169e1;
-    --foreground:#FFFDD0;
-    --text: rgb(23, 21, 21);
-    --divider: silver; 
 
-    --mobile-indent: 1rem;
-}
-.navlist{
-    list-style-type: none;
-    display:flex;
-    align-items: baseline;
-    margin:0;
-    padding: 0 var(--mobile-indent);
-    background-color: var(--foreground);
-    .navlist__link{
-        margin-right: 1rem;
-        padding: var(--mobile-indent) 0 ;
-        
-    }
-    .navlist__link--active{
-        padding: var(--mobile-indent);
-        margin-right: 1rem;
-        background-color: var(--background);
-    }
-}
-ul{
-    list-style-type: none;
-    padding:0;
-}
-a{
-    text-decoration: none;
-    color:var(--text); 
- }
+
 .social{
     display:flex;
     justify-content: space-evenly;
@@ -39,10 +7,6 @@ a{
 }
 .social__element{
     padding:none;
-}
-body{
-    background-color: var(--background);
-    margin: 0;
 }
 .body__profileContent{
     color:white;
