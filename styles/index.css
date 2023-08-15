@@ -6,7 +6,7 @@
 
     --mobile-indent: 1rem;
     --tablet-indent: 2.5rem;
-
+    --desktop-indent-projects: 7rem;
 }
 
 .social{
@@ -137,4 +137,14 @@
         margin: var(--tablet-indent);
     }
     
+}
+@media (min-width:1024px) {
+    .projectCard{
+        margin-left: var(--desktop-indent-projects);
+        margin-right: var(--desktop-indent-projects);
+        .projectCard__title{
+            margin-left:auto;
+            margin-right:auto;
+        }
+    }
 }
